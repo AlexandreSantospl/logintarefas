@@ -1,0 +1,15 @@
+<div class="card">
+    <div class="card-body">
+        <form action="/usuarios/nova" method="post">
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" placeholder="Limpar o chão..." class="form-control mt-2"></button>
+            <br>
+            <label for="descricao">Descrição: </label>
+            <textarea type="text" name="descricao" id="descricao" placeholder="Usar desinfetante... "
+                class="form-control mt-2" style="height: 200px;"></textarea>
+            <input type="hidden" name="dono" value="{{user.nome}}">
+            <button type="submite" class="btn btn-success mt-4" style="width: 100px">Criar</button>
+
+        </form>
+    </div>
+</div>

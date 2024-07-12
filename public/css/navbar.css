@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(40, 161, 182);
+}
+
+
+#text{
+    font-size: 18pt;
+}
+
+#text:hover{
+    background-color: rgba(128, 128, 128, 0.247);
+    padding: 10px;
+    border-radius: 15px;
+
+}
+
+.border{
+    border: 1px solid red;
+}
+
+.sidebar{
+    position: fixed; /*Posição fixa*/
+    top: 0;
+    display: flex; 
+    flex-direction: column; /* Um abaixo do outro */
+    align-items: flex-start; /* sempre iniciando no inicio */
+    width: 100px; /* largura da coluna */
+    height: 100%;
+    padding: 40px 10px 30px 10px; /* 40 Esquerda | 10 direita | 30 Embaixo | 10 encima */
+    border-right: 1px solid grey;
+    background-color: rgba(184, 247, 237, 0.568);
+    
+}
+
+
+
+#img{
+    margin-bottom: 25px;
+}
+
+
+.sidebar button{
+    height: 75px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+}
+
+.sidebar button > span{
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    height: 75px;
+    padding: 25px 20px 0 0;
+    transition: transform 0.4s;
+}
+
+#new{
+    margin-top: 200px;
+}
+
+.sidebar button:hover > span{
+    transform: scale(1.1);
+}
+
+
+.sidebar > nav{
+    width: 100%;
+}

@@ -1,0 +1,32 @@
+{{#each tarefas}}
+
+{{#if completo}}
+<div class="card mt-4" style="background-color: rgba(255, 0, 0, 0.39);">
+    <div class="card-body" style="height: 230px;">
+        <h4>{{nome}}</h4>
+        <hr>
+        <form action="/usuarios/deletar/{{_id}}" method="post">
+            <input type="hidden" value="{{_id}}" name="id">
+            <button class="btn btn-success mt-4" type="submite"
+                style="margin-left: 90%; width: 100px; height: 50px;">Deletar!</button>
+        </form>
+        {{#if descricao}}
+        <p style="margin-top: -5%;">{{descricao}}</p>
+        {{/if}}
+
+    </div>
+</div>
+{{/if}}
+
+
+
+{{else}}
+
+<div class="card">
+    <div class="card-body">
+        <h4>Nenhuma tarefa encontrada!</h4>
+    </div>
+</div>
+
+
+{{/each}}
